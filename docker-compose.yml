@@ -10,7 +10,7 @@ services:
       MYSQL_PASSWORD: $DB_PASSWORD
     volumes:
       - ./data:/var/lib/mysql # Use bind mount
-
+      - ./db:/docker-entrypoint-initdb.d
   php:
     image: wodby/drupal-php:$PHP_TAG
     container_name: "${PROJECT_NAME}_php"
