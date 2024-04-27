@@ -6,3 +6,4 @@
 web/libraries/*
 /web/sites/*/files/
 /data
+.idea/
