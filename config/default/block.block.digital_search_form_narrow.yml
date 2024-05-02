@@ -1,0 +1,23 @@
+uuid: eb6c0bd5-1c4b-4756-949e-3dcd29397406
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - digital
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: digital_search_form_narrow
+theme: digital
+region: header
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

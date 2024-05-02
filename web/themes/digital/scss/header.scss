@@ -1,0 +1,169 @@
+header {
+
+  .box-menu {
+    background-color: #005BA6;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+
+    .menu {
+      ul {
+        //padding-top: 12px;
+        //padding-bottom: 12px;
+      }
+      a {
+        color: #fff;
+        &.active {
+          border-bottom: 2px solid #fff;
+          padding-bottom: 2px;
+        }
+      }
+
+    }
+
+    .menu-mobile {
+      .search {
+        position: relative;
+        border: 1px solid #fff;
+        img {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 5px;
+          height: 100%;
+
+        }
+        input {
+          background-color: transparent;
+          outline: none !important;
+          border: none;
+          color: #fff;
+          padding-left: 20px;
+          padding-right: 5px;
+          height: 100%;
+          text-align: end;
+          width: 100%;
+          &::placeholder {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 9999;
+  transition: 0.4s;
+  min-height: 100vh;
+
+  &.active {
+    left: 0;
+    width: 100vw;
+    //right: 0;
+  }
+
+  .top {
+    background-color: #25ABE0;
+    height: 90px;
+
+    .search {
+      position: relative;
+      border: 2px solid #fff;
+      height: 40px;
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 5px;
+        height: 100%;
+
+      }
+      input {
+        background-color: transparent;
+        outline: none !important;
+        border: none;
+        color: #fff;
+        padding-left: 50px;
+        padding-right: 5px;
+        height: 100%;
+        width: 100%;
+        font-size: 14px;
+        &::placeholder {
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+    }
+
+  }
+
+  .content {
+    background-color: #005BA6;
+    min-height: calc(100vh - 90px);
+    color: #fff;
+
+    h4 {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+
+      span {
+        color: #25ABE0;
+      }
+    }
+
+    .menu-topic {
+      padding: 0;
+      margin-bottom: 30px;
+
+      li {
+        margin-top: 30px;
+        a {
+          font-size: 30px;
+          font-weight: 700;
+          color: #fff;
+        }
+      }
+
+    }
+
+    .menu-mobile {
+      padding: 0;
+      margin-bottom: 30px;
+
+      li {
+        margin-top: 20px;
+        a {
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+
+    }
+
+    .follow {
+
+      .list-social {
+        gap: 10px !important;
+        a {
+          height: 40px;
+          width: 40px;
+
+          img {
+            width: 20px;
+          }
+        }
+      }
+
+    }
+
+  }
+
+}

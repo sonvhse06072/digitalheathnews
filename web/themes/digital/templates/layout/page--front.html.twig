@@ -1,0 +1,95 @@
+{% include '@components/_header.twig' %}
+
+<main class="page--front">
+
+  <div class="content">
+
+    <div class="container">
+
+      <div class="banner text-center pt-5">
+        <h2>{{ 'Lorem ipsum dolor sit amet consectetur'|t }}</h2>
+        <p>{{ 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim lorem ipsum veniam'|t }}</p>
+      </div>
+
+      <div class="box-search pt-4">
+
+        <div class="row g-3 justify-content-between">
+
+          <div class="col-auto">
+            <div class="row g-3 justify-content-between">
+
+              <div class="col-auto">
+                <div class="filter">
+                  <a href="#" class="all">{{ 'All'|t }}</a>
+                  <a href="#" class="technology">{{ 'Technology'|t }}</a>
+                  <a href="#" class="business">{{ 'Business'|t }}</a>
+                  <a href="#" class="lifestyle">{{ 'Lifestyle'|t }}</a>
+                  <a href="#" class="features">{{ 'Features'|t }}</a>
+                </div>
+              </div>
+
+              <div class="col-auto d-none d-md-block">
+                <div class="search">
+                  <img alt="" width="20px" src="/{{ directory }}/image/icons/search-blue.svg"/>
+                  <input placeholder="Search"/>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-auto d-none d-md-block">
+            {{ page.socials }}
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="main-content py-5">
+
+        <div class="row g-3 list-item" data-masonry='{"percentPosition": true }'>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            {% include '@components/card/card.twig' %}
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="text-center pb-4">
+        <a href="#" class="load-more">{{ 'Load more articles' }}</a>
+      </div>
+
+      <h2 class="text-center mt-5 see-latest pb-2 fw-bold">{{ 'See the latest on our social media'|t }}</h2>
+
+    </div>
+
+  </div>
+
+  <div class="latest py-5">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-7">
+          <h3 class="title text-decoration-underline">{{ 'Latest posts'|t }}</h3>
+        </div>
+
+        <div class="col-md-5">
+          <h3 class="title text-decoration-underline">{{ 'Latest tweets'|t }}</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</main>
+
+{% include '@components/_footer.twig' %}

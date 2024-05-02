@@ -1,0 +1,20 @@
+uuid: 4bf31ce3-ab00-499c-a2f4-ad3a19e23b5b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - digital
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: digital_page_title
+theme: digital
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

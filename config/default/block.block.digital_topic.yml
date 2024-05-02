@@ -1,0 +1,25 @@
+uuid: 3d115fac-5d42-41a9-883f-19fbda6d69ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.topic
+  module:
+    - system
+  theme:
+    - digital
+id: digital_topic
+theme: digital
+region: menu_mobile
+weight: -10
+provider: null
+plugin: 'system_menu_block:topic'
+settings:
+  id: 'system_menu_block:topic'
+  label: topic
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

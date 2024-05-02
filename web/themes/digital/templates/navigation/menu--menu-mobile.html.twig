@@ -1,0 +1,10 @@
+<ul class="menu-mobile">
+
+  {% for i in items %}
+    <li class="list-unstyled">
+      <a class="text-decoration-none {{ i.in_active_trail ? 'active' : '' }}" href="{{ i.url }}">{{ i.title }}</a>
+    </li>
+  {% endfor %}
+
+</ul>
+

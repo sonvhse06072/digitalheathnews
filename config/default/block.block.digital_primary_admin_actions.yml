@@ -1,0 +1,20 @@
+uuid: 5b90fde1-3e06-4942-a352-e13f71e6cd1b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - digital
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: digital_primary_admin_actions
+theme: digital
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

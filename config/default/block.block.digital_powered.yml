@@ -1,0 +1,22 @@
+uuid: 15b76c28-a4a4-4815-8274-47f68a029050
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - digital
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: digital_powered
+theme: digital
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

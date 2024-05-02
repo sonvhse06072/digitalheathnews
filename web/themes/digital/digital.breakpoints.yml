@@ -1,0 +1,16 @@
+# Breakpoints
+digital.small:
+  label: small
+  mediaQuery: 'all and (min-width: 0)'
+digital.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 576px)'
+digital.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 768px)'
+digital.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 992px)'
+digital.large:
+  label: large
+  mediaQuery: 'all and (min-width: 1200px)'

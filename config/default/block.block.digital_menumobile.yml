@@ -1,0 +1,25 @@
+uuid: dec02c8a-4ddd-4287-892f-1f4da5994926
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-mobile
+  module:
+    - system
+  theme:
+    - digital
+id: digital_menumobile
+theme: digital
+region: menu_mobile
+weight: -9
+provider: null
+plugin: 'system_menu_block:menu-mobile'
+settings:
+  id: 'system_menu_block:menu-mobile'
+  label: 'Menu mobile'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

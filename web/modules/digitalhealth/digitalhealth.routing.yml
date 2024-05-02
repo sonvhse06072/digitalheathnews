@@ -1,0 +1,6 @@
+it_app.structure:
+  path: '/front'
+  defaults:
+    _form: '\Drupal\digital\Form\FrontForm'
+  requirements:
+    _access: 'TRUE'

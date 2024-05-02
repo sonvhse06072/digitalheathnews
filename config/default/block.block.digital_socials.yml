@@ -1,0 +1,25 @@
+uuid: 3519815c-6f81-452a-9f2e-d781d977d38d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.socials
+  module:
+    - system
+  theme:
+    - digital
+id: digital_socials
+theme: digital
+region: socials
+weight: 0
+provider: null
+plugin: 'system_menu_block:socials'
+settings:
+  id: 'system_menu_block:socials'
+  label: Socials
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

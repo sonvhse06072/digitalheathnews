@@ -1,0 +1,5 @@
+name: 'Digital module'
+type: module
+description: 'Digital view.'
+package: Custom
+core_version_requirement: ^10 || ^11

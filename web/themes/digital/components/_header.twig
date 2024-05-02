@@ -1,0 +1,80 @@
+<header>
+  <div class="box-logo container my-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <h1>Logo</h1>
+      <div class="toggle-bar d-block d-md-none">
+        <img  alt="" width="50px" src="/{{ directory }}/image/icons/menu.svg"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="box-menu">
+    <div class="container">
+
+      <div class="menu text-white d-none d-md-block">
+        {{ page.menu_header }}
+      </div>
+
+      <div class="menu-mobile d-flex d-md-none justify-content-between gap-3">
+        <div class="d-flex gap-2 align-items-center">
+          <span class="text-white nowrap">{{ 'Follow Us'|t }}</span>
+
+{#          {{ page.socials }}#}
+
+{#          <div class="list-social d-flex gap-1 gap-md-2">#}
+{#            <a href="#" class="item">#}
+{#              <img alt="" width="15px" src="/{{ directory }}/image/icons/facebook-blue.svg"/>#}
+{#            </a>#}
+{#            <a href="#" class="item">#}
+{#              <img alt="" width="15px" src="/{{ directory }}/image/icons/facebook-blue.svg"/>#}
+{#            </a>#}
+{#            <a href="#" class="item">#}
+{#              <img alt="" width="15px" src="/{{ directory }}/image/icons/facebook-blue.svg"/>#}
+{#            </a>#}
+{#            <a href="#" class="item">#}
+{#              <img alt="" width="15px" src="/{{ directory }}/image/icons/facebook-blue.svg"/>#}
+{#            </a>#}
+{#          </div>#}
+        </div>
+        <div class="search">
+          <img alt="" width="15px" src="/{{ directory }}/image/icons/search-white.svg"/>
+          <input placeholder="Search">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<div class="sidebar-menu">
+  <div class="top d-flex align-items-center">
+    <div class="gap-5 container d-flex justify-content-between align-items-center">
+      <div class="search w-100">
+        <img alt="" width="25px" src="/{{ directory }}/image/icons/search-white.svg"/>
+        <input placeholder="Search">
+      </div>
+
+      <div class="close-menu">
+        <img alt="" width="50px" src="/{{ directory }}/image/icons/close.svg"/>
+      </div>
+    </div>
+  </div>
+  <div class="content text-center">
+    <div class="container">
+      <h4 class="pt-4">{{ 'View by topic'|t }}</h4>
+
+      {{ page.menu_mobile }}
+
+      <h2>digitalhealth<span>news</span></h2>
+
+      <div class="follow mt-5">
+        <h4 class="mb-2">{{ 'Follow Us'|t }}</h4>
+        {{ page.socials }}
+      </div>
+
+    </div>
+  </div>
+</div>
