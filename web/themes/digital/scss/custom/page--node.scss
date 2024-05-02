@@ -1,0 +1,159 @@
+.page--node {
+
+  .go-back {
+    background-color: #E6E6E6;
+
+     a {
+       text-decoration: none;
+       color: #1E4D76;
+
+     }
+  }
+
+  .date {
+    color: #393939;
+  }
+
+  h1 {
+    color: #005BA6;
+  }
+
+  .avatar {
+    border-radius: 0;
+    border-right: 20px solid #EF4123;
+    border-bottom: 20px solid #EF4123;
+    border-left: none;
+    border-top: none;
+
+    &.technology {
+      border-color: #EF4123;
+    }
+
+    &.business {
+      border-color: #005826;
+    }
+
+    &.lifestyle {
+      border-color: #8DC63F;
+    }
+
+    &.features {
+      border-color: #25ABE0;
+    }
+  }
+
+
+  .category {
+    background-color: #EF4123;
+    padding: 10px 30px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    &.technology {
+      background-color: #EF4123;
+    }
+
+    &.business {
+      background-color: #005826;
+    }
+
+    &.lifestyle {
+      background-color: #8DC63F;
+    }
+
+    &.features {
+      background-color: #25ABE0;
+    }
+
+  }
+
+  .share {
+    a {
+      display: block;
+      background-color: #005BA6;
+      padding: 10px 40px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+  .count-share {
+    font-weight: 500;
+  }
+
+  .related {
+    background-color: #E6E6E6;
+
+    .title {
+      font-weight: 700;
+      color: #005BA6;
+    }
+
+    .list-item {
+      .card {
+        border-radius: 0;
+        border-right: 20px solid #EF4123;
+        border-bottom: 20px solid #EF4123;
+        border-left: none;
+        border-top: none;
+
+        &.technology {
+          border-color: #EF4123;
+        }
+
+        &.business {
+          border-color: #005826;
+        }
+
+        &.lifestyle {
+          border-color: #8DC63F;
+        }
+
+        &.features {
+          border-color: #25ABE0;
+        }
+
+        .card-img-top {
+          border-radius: 0;
+          width: 100% !important;
+          height: 100% !important;
+        }
+
+        .date {
+          color: #393939;
+          font-size: 13px;
+        }
+
+        .card-title {
+          font-size: 16px;
+        }
+
+        .card-text {
+          font-size: 14px;
+        }
+
+        .card-meta {
+          span {
+            font-size: 12px;
+            color: #393939;
+          }
+
+          a {
+            font-size: 13px;
+            border: 2px solid #000;
+            padding: 5px 20px;
+            color: #000;
+            text-decoration: none;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -18,6 +18,8 @@ regions:
   menu_header: Menu header
   menu_footer: Menu footer
   menu_mobile: Menu mobile
+  home_content: Home content
+  related_article: Related article
 
 
 components:

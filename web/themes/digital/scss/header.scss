@@ -13,6 +13,7 @@ header {
       }
       a {
         color: #fff;
+        font-weight: 600;
         &.active {
           border-bottom: 2px solid #fff;
           padding-bottom: 2px;
@@ -55,7 +56,7 @@ header {
 .sidebar-menu {
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -500px;
   z-index: 9999;
   transition: 0.4s;
   min-height: 100vh;

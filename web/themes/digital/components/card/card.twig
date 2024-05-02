@@ -1,17 +1,17 @@
-<div class="card">
-  <img alt="" class="card-img-top" src="/{{ directory }}/image/bloger.jpg"/>
+<div class="card {{ data.category|lower  }}">
+  <img alt="" class="card-img-top" src="{{ data.img_src }}"/>
   <div class="card-body">
     <div class="date d-flex align-items-center gap-2">
       <img width="15px" alt="" src="/{{ directory }}/image/icons/date.svg"/>
-      22/05
+      {{ data.date }}
     </div>
-    <h5 class="card-title mt-3">Card title</h5>
-    <p class="card-text">Some quick example text to quick example text t quick example text t quick example text t quick example text t quick example text t build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="text-decoration-none text-dark"><strong>{{ 'Read more'|t }}</strong></a>
+    <h5 class="card-title mt-3 fw-bold">{{ data.title }}</h5>
+    <p class="card-text">{{ data.description }}</p>
+    <a href="{{ data.link_url }}" class="text-decoration-none text-dark"><strong>{{ 'Read more'|t }}</strong></a>
 
     <div class="card-meta d-flex justify-content-between align-items-center mt-4 gap-3">
-      <span>source: author hyperlink lorem ipsum</span>
-      <a href="#">Technology</a>
+      <span>{{ data.author }}</span>
+      <a href="?category={{ data.category }}">{{ data.category }}</a>
     </div>
   </div>
 </div>

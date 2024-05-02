@@ -2,7 +2,7 @@
 
 <main class="page--front">
 
-  <div class="content">
+  <div class="content pb-5">
 
     <div class="container">
 
@@ -20,19 +20,20 @@
 
               <div class="col-auto">
                 <div class="filter">
-                  <a href="#" class="all">{{ 'All'|t }}</a>
-                  <a href="#" class="technology">{{ 'Technology'|t }}</a>
-                  <a href="#" class="business">{{ 'Business'|t }}</a>
-                  <a href="#" class="lifestyle">{{ 'Lifestyle'|t }}</a>
-                  <a href="#" class="features">{{ 'Features'|t }}</a>
+                  <a href="/" class="all">{{ 'All'|t }}</a>
+                  <a href="?category=Technology" class="technology">{{ 'Technology'|t }}</a>
+                  <a href="?category=Business" class="business">{{ 'Business'|t }}</a>
+                  <a href="?category=Lifestyle" class="lifestyle">{{ 'Lifestyle'|t }}</a>
+                  <a href="?category=Features" class="features">{{ 'Features'|t }}</a>
                 </div>
               </div>
-
               <div class="col-auto d-none d-md-block">
-                <div class="search">
-                  <img alt="" width="20px" src="/{{ directory }}/image/icons/search-blue.svg"/>
-                  <input placeholder="Search"/>
-                </div>
+                <form method="GET">
+                  <div class="search">
+                    <img alt="" width="20px" src="/{{ directory }}/image/icons/search-blue.svg"/>
+                    <input name="search" placeholder="Search" value="{{ url_parameters.search ?? '' }}"/>
+                  </div>
+                </form>
               </div>
             </div>
 
@@ -49,38 +50,46 @@
 
       <div class="main-content py-5">
 
-        <div class="row g-3 list-item" data-masonry='{"percentPosition": true }'>
-
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            {% include '@components/card/card.twig' %}
-          </div>
-
-        </div>
+        {{ page.home_content }}
 
       </div>
 
-      <div class="text-center pb-4">
+      <div class="text-center">
         <a href="#" class="load-more">{{ 'Load more articles' }}</a>
       </div>
-
-      <h2 class="text-center mt-5 see-latest pb-2 fw-bold">{{ 'See the latest on our social media'|t }}</h2>
 
     </div>
 
   </div>
 
-  <div class="latest py-5">
+  <div class="latest pb-5">
+
+    <div class="see-latest pt-4 pb-2 mb-3 mb-md-5">
+      <div class="container">
+        <h2 class="text-center m-0 fw-bold">{{ 'See the latest on our social media'|t }}</h2>
+      </div>
+    </div>
 
     <div class="container">
 
-      <div class="row">
+      <div class="row g-4">
 
         <div class="col-md-7">
-          <h3 class="title text-decoration-underline">{{ 'Latest posts'|t }}</h3>
+          <h3 class="title text-decoration-underline d-none d-md-block">{{ 'Latest posts'|t }}</h3>
+
+          <div class="box-content">
+            <img alt="" class="card-img-top" src="/themes/digital/image/bloger.jpg">
+          </div>
+
         </div>
 
         <div class="col-md-5">
-          <h3 class="title text-decoration-underline">{{ 'Latest tweets'|t }}</h3>
+          <h3 class="title text-decoration-underline d-none d-md-block">{{ 'Latest tweets'|t }}</h3>
+
+          <div class="box-content">
+            <img alt="" class="card-img-top" src="/themes/digital/image/bloger.jpg">
+          </div>
+
         </div>
 
       </div>

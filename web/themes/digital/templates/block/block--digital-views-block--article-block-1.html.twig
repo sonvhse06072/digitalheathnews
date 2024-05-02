@@ -1,0 +1,36 @@
+{% set items = [] %}
+
+<div class="row g-3 list-item" data-masonry='{"percentPosition": true }'>
+  {% set rows = content['view_build']['#view'].result %}
+
+  {% if rows %}
+
+    {% for item in content['view_build']['#view'].result %}
+      {% set row = {
+        "link_url": path('entity.node.canonical', {'node': item._entity.nid.value}),
+        "title": item._entity.title.value,
+        "description": item._entity.body.summary ?? item._entity.body.value|striptags,
+        "img_src": item._entity.field_image.entity.uri.url,
+        "date": item._entity.changed.value|date("d M Y"),
+        "category": item._entity.field_category.entity.name.value,
+        "author": item._entity.uid.entity.name.value
+      } %}
+
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        {% include '@components/card/card.twig' with {
+          "data": row
+        } %}
+      </div>
+
+    {% endfor %}
+
+  {% else %}
+
+    <div>{{ 'No results' }}</div>
+
+  {% endif %}
+
+
+</div>
+
+{% set catch_cache = content|render %}

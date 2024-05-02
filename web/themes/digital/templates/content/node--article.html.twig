@@ -1,0 +1,63 @@
+{% set item = {
+  "title": node.title.value,
+  "description": node._entity.body.summary,
+  "content": node.body.value,
+  "img_src": node.field_image.entity.uri.url,
+  "date": node.changed.value|date("d M Y"),
+  "category": node.field_category.entity.name.value,
+  "author": node.uid.entity.name.value
+} %}
+
+
+<div class="go-back">
+
+  <div class="container">
+    <a href="/" class="d-flex gap-2 align-items-center py-1">
+      <img alt="" width="15px" src="/{{ directory }}/image/icons/arrow-left.svg"/>
+      {{ 'Back'|t }}
+    </a>
+  </div>
+
+</div>
+
+<div class="container py-5">
+  <div class="d-flex justify-content-between">
+
+    <div class="date d-flex align-items-center gap-2">
+      <img width="20px" alt="" src="/{{ directory }}/image/icons/date.svg"/>
+      {{ item.date }}
+    </div>
+
+    <div class="category">
+      <a href="/?category={{ item.category }}">{{ item.category }}</a>
+    </div>
+
+  </div>
+
+
+  <h1 class="mt-5 mb-4 fw-bold">{{ item.title }}</h1>
+
+  <span>{{ item.author }}</span>
+
+
+  <div class="py-3">
+    <img alt="{{ item.title }}" class="avatar mw-100" src="{{ item.img_src }}"/>
+  </div>
+
+  {{ item.content|raw }}
+
+
+  <div class="d-flex justify-content-between align-items-center mt-5">
+
+    <div class="share">
+      <a href="#">{{ 'Share this article'|t }}</a>
+    </div>
+
+    <div class="count-share d-flex gap-2 align-items-center">
+      <img alt="" width="20px" src="/{{ directory }}/image/icons/share.svg"/>
+      222 Share
+    </div>
+
+  </div>
+
+</div>

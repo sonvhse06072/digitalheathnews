@@ -2,7 +2,7 @@ uuid: 2d3fc56d-7c1a-4a42-996e-3a3e05aab023
 langcode: en
 status: true
 dependencies: {  }
-name: category
+name: Category
 vid: category
 description: Category
 weight: 0
