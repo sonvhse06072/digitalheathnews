@@ -1,0 +1,58 @@
+.page--search {
+  .box-title {
+
+    .key {
+      color: #005BA6;
+    }
+
+  }
+
+
+  .sort-time {
+
+    select {
+      border: none;
+      padding-right: 20px;
+      outline: none !important;
+    }
+
+  }
+
+  .clearfix-search {
+    border-bottom: 1px solid #005BA6;
+  }
+
+  .load-more {
+    background-color: #005BA6;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #005BA6;
+    font-weight: 500;
+    &:hover {
+      background-color: transparent;
+      color: #005BA6;
+    }
+  }
+
+  .archived {
+    background-color: #E6E6E6;
+
+    h3 {
+      color: #005BA6;
+    }
+
+    table {
+      th, td {
+        border-color: #005BA6;
+      }
+    }
+  }
+
+  .paging {
+    a {
+      color: #013765;
+      font-size: 15px;
+    }
+  }
+}

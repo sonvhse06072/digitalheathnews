@@ -1,6 +1,6 @@
 {% set items = [] %}
 
-<div class="row g-3 list-item" data-masonry='{"percentPosition": true }'>
+<div class="row g-3 list-item pb-5" data-masonry='{"percentPosition": true }'>
   {% set rows = content['view_build']['#view'].result %}
 
   {% if rows %}
@@ -31,6 +31,10 @@
   {% endif %}
 
 
+</div>
+
+<div class="text-center">
+  <a href="#" class="load-more">{{ 'Load more articles' }}</a>
 </div>
 
 {% set catch_cache = content|render %}

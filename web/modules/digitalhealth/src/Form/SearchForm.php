@@ -16,14 +16,14 @@ use Drupal\Core\Url;
  * @category Custom
  * @link https://www.dots.eco
  */
-class FrontForm extends FormBase {
+class SearchForm extends FormBase {
 
   /**
    * {@inheritdoc}
    */
   public function getFormId()
   {
-    return 'front_form';
+    return 'search_form';
   }
 
   /**

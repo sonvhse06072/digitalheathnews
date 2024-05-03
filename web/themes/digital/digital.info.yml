@@ -20,6 +20,8 @@ regions:
   menu_mobile: Menu mobile
   home_content: Home content
   related_article: Related article
+  search_content: Search content
+  search_archived: Search archived
 
 
 components:

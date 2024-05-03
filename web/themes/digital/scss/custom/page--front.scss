@@ -10,7 +10,6 @@
 
       h2 {
         color: #005BA6;
-        font-weight: bold;
       }
     }
 
@@ -25,7 +24,6 @@
         }
 
         a {
-          font-weight: bold;
           color: #fff;
           font-size: 14px;
           min-width: 140px;
@@ -83,7 +81,7 @@
           max-width: 178px;
           &::placeholder {
             color: #005BA6;
-            font-weight: bolder;
+            font-weight: 600;
           }
         }
       }
@@ -98,72 +96,14 @@
           align-items: center;
           background-color: #fff;
           border-radius: 50%;
-        }
-      }
 
-    }
-
-    .main-content {
-      .list-item {
-        .card {
-          border-radius: 0;
-          border-right: 20px solid #EF4123;
-          border-bottom: 20px solid #EF4123;
-          border-left: none;
-          border-top: none;
-
-          &.technology {
-            border-color: #EF4123;
-          }
-
-          &.business {
-            border-color: #005826;
-          }
-
-          &.lifestyle {
-            border-color: #8DC63F;
-          }
-
-          &.features {
-            border-color: #25ABE0;
-          }
-
-          .card-img-top {
-            border-radius: 0;
-            width: 100% !important;
-            height: 100% !important;
-          }
-
-          .date {
-            color: #393939;
-            font-size: 13px;
-          }
-
-          .card-title {
-            font-size: 16px;
-          }
-
-          .card-text {
-            font-size: 14px;
-          }
-
-          .card-meta {
-            span {
-              font-size: 12px;
-              color: #393939;
-            }
-
-            a {
-              font-size: 13px;
-              border: 2px solid #000;
-              padding: 5px 20px;
-              color: #000;
-              text-decoration: none;
-              font-weight: 700;
-            }
+          img {
+            height: 20px;
+            width: 20px;
           }
         }
       }
+
     }
 
     .load-more {
@@ -194,7 +134,6 @@
 
     .title {
       color: #005BA6;
-      font-weight: bold;
     }
 
   }

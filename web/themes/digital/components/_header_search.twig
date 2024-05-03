@@ -4,6 +4,12 @@
       <a href="/">
         <img alt="" width="280px" src="/{{ directory }}/image/icons/logo.svg"/>
       </a>
+      <form method="GET" action="/search" class="d-none d-md-block">
+        <div class="search">
+          <img alt="" width="20px" src="/{{ directory }}/image/icons/search-blue.svg"/>
+          <input name="keyword" placeholder="Search" value="{{ url_parameters.keyword ?? "" }}"/>
+        </div>
+      </form>
       <div class="toggle-bar d-block d-md-none">
         <img alt="" width="50px" src="/{{ directory }}/image/icons/menu.svg"/>
       </div>

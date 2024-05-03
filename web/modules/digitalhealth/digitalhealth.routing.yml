@@ -1,6 +1,13 @@
 it_app.structure:
   path: '/front'
   defaults:
-    _form: '\Drupal\digital\Form\FrontForm'
+    _form: '\Drupal\digitalhealth\Form\FrontForm'
+  requirements:
+    _access: 'TRUE'
+
+it_app.search:
+  path: '/search'
+  defaults:
+    _form: '\Drupal\digitalhealth\Form\SearchForm'
   requirements:
     _access: 'TRUE'

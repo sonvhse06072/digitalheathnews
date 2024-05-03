@@ -1,0 +1,36 @@
+{% include '@components/_header_search.twig' %}
+
+<main class="page--search">
+
+  <div class="content pb-5">
+
+    <div class="container">
+
+      <div class="box-title py-4 text-center">
+        <h3>{{ 'Search results for'|t }} <span class="key">{{ url_parameters.keyword ?? '' }}</span></h3>
+      </div>
+
+      <div class="clearfix-search mb-3"></div>
+
+      <div class="sort-time text-end">
+        <select>
+          <option>Newest to oldest</option>
+          <option>Oldest to newest</option>
+        </select>
+      </div>
+
+      <div class="main-content pb-5 pt-4">
+
+        {{ page.search_content }}
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {{ page.search_archived }}
+
+</main>
+
+{% include '@components/_footer_partner.twig' %}

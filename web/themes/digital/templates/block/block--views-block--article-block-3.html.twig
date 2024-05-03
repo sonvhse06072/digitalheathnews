@@ -1,0 +1,63 @@
+<div class="archived py-5">
+
+  <div class="container">
+    <h3 class="text-center">{{ 'Archived articles'|t }}</h3>
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">{{ 'Date'|t }}</th>
+        <th scope="col">{{ 'Title'|t }}</th>
+        <th scope="col">{{ 'Organisation/author <link>'|t }}</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      {% for item in content['view_build']['#view'].result %}
+        {% set row = {
+          "link_url": path('entity.node.canonical', {'node': item._entity.nid.value}),
+          "title": item._entity.title.value,
+          "description": item._entity.body.summary ?? item._entity.body.value|striptags,
+          "img_src": item._entity.field_image.entity.uri.url,
+          "date": item._entity.changed.value|date("d M Y"),
+          "category": item._entity.field_category.entity.name.value,
+          "author": item._entity.uid.entity.name.value
+        } %}
+
+        <tr>
+          <td>{{ row.date }}</td>
+          <td>{{ row.title }}</td>
+          <td>{{ row.author }}</td>
+        </tr>
+
+      {% endfor %}
+
+
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="d-flex justify-content-between my-3 paging">
+
+    <div class="d-flex gap-2">
+      <a>1</a>
+      <a>2</a>
+      <a>3</a>
+      <a>4</a>
+      <a>5</a>
+      <a>...</a>
+      <a>10</a>
+    </div>
+    <div>
+      <a href="#" class="d-flex gap-2 align-items-center text-decoration-none">
+        {{ 'Next'|t }}
+        <img alt="" width="12px" src="/{{ directory }}/image/icons/arrow-right.svg"/>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+{% set catch_cache = content|render %}

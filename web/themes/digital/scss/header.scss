@@ -158,7 +158,7 @@ header {
           width: 40px;
 
           img {
-            width: 20px;
+            height: 20px;
           }
         }
       }
@@ -167,4 +167,35 @@ header {
 
   }
 
+}
+
+
+.box-logo {
+  .search {
+    height: 40px;
+    border: 1px solid #005BA6;
+    position: relative;
+    img {
+      position: absolute;
+      left: 5px;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+    }
+    input {
+      border: none;
+      display: flex;
+      outline: none !important;
+      height: 100%;
+      color: #005BA6;
+      padding-left: 30px;
+      padding-right: 10px;
+      text-align: end;
+      max-width: 178px;
+      &::placeholder {
+        color: #005BA6;
+        font-weight: 600;
+      }
+    }
+  }
 }

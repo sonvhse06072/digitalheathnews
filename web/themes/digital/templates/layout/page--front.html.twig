@@ -28,10 +28,10 @@
                 </div>
               </div>
               <div class="col-auto d-none d-md-block">
-                <form method="GET">
+                <form method="GET" action="/search">
                   <div class="search">
                     <img alt="" width="20px" src="/{{ directory }}/image/icons/search-blue.svg"/>
-                    <input name="search" placeholder="Search" value="{{ url_parameters.search ?? '' }}"/>
+                    <input name="keyword" placeholder="Search"/>
                   </div>
                 </form>
               </div>
@@ -54,10 +54,6 @@
 
       </div>
 
-      <div class="text-center">
-        <a href="#" class="load-more">{{ 'Load more articles' }}</a>
-      </div>
-
     </div>
 
   </div>
@@ -66,13 +62,13 @@
 
     <div class="see-latest pt-4 pb-2 mb-3 mb-md-5">
       <div class="container">
-        <h2 class="text-center m-0 fw-bold">{{ 'See the latest on our social media'|t }}</h2>
+        <h2 class="text-center m-0">{{ 'See the latest on our social media'|t }}</h2>
       </div>
     </div>
 
     <div class="container">
 
-      <div class="row g-4">
+      <div class="row g-5">
 
         <div class="col-md-7">
           <h3 class="title text-decoration-underline d-none d-md-block">{{ 'Latest posts'|t }}</h3>
