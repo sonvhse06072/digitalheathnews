@@ -7,7 +7,7 @@
       <form method="GET" action="/search" class="d-none d-md-block">
         <div class="search">
           <img alt="" width="20px" src="/{{ directory }}/image/icons/search-blue.svg"/>
-          <input name="keyword" placeholder="Search" value="{{ url_parameters.keyword ?? "" }}"/>
+          <input class="search-input" name="keyword" placeholder="Search" value="{{ url_parameters.keyword ?? "" }}"/>
         </div>
       </form>
       <div class="toggle-bar d-block d-md-none">
@@ -28,10 +28,12 @@
           <span class="text-white nowrap">{{ 'Follow Us'|t }}</span>
           {{ page.socials }}
         </div>
-        <div class="search">
-          <img alt="" width="15px" src="/{{ directory }}/image/icons/search-white.svg"/>
-          <input placeholder="Search">
-        </div>
+        <form method="GET" action="/search">
+          <div class="search">
+            <img alt="" width="15px" src="/{{ directory }}/image/icons/search-white.svg"/>
+            <input class="search-input" name="keyword" placeholder="Search" value="{{ url_parameters.keyword ?? '' }}">
+          </div>
+        </form>
       </div>
 
     </div>

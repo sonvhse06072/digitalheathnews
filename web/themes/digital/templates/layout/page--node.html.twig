@@ -1,6 +1,10 @@
-{% include '@components/_header.twig' %}
+{% include '@components/_header_search.twig' %}
 
 <main class="page--node">
+
+  <div class="d-none d-md-block">
+    {{ page.socials }}
+  </div>
 
   {{ page.content }}
 
@@ -8,4 +12,5 @@
 
 </main>
 
+{% include '@components/_partner.twig' %}
 {% include '@components/_footer.twig' %}

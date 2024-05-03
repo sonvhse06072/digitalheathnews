@@ -1,8 +1,23 @@
+{% set items = [] %}
+{% for item in content['view_build']['#view'].result %}
+  {% set row = {
+    "link_url": path('entity.node.canonical', {'node': item._entity.nid.value}),
+    "title": item._entity.title.value,
+    "description": item._entity.body.summary ?? item._entity.body.value|striptags,
+    "img_src": item._entity.field_image.entity.uri.url,
+    "date": item._entity.changed.value|date("d M Y"),
+    "category": item._entity.field_category.entity.name.value,
+    "author": item._entity.uid.entity.name.value
+  } %}
+
+  {% set items = items|merge([row]) %}
+{% endfor %}
+
 <div class="archived py-5">
 
   <div class="container">
     <h3 class="text-center">{{ 'Archived articles'|t }}</h3>
-    <table class="table">
+    <table class="table d-none d-md-block">
       <thead>
       <tr>
         <th scope="col">{{ 'Date'|t }}</th>
@@ -12,21 +27,12 @@
       </thead>
       <tbody>
 
-      {% for item in content['view_build']['#view'].result %}
-        {% set row = {
-          "link_url": path('entity.node.canonical', {'node': item._entity.nid.value}),
-          "title": item._entity.title.value,
-          "description": item._entity.body.summary ?? item._entity.body.value|striptags,
-          "img_src": item._entity.field_image.entity.uri.url,
-          "date": item._entity.changed.value|date("d M Y"),
-          "category": item._entity.field_category.entity.name.value,
-          "author": item._entity.uid.entity.name.value
-        } %}
+      {% for item in items %}
 
         <tr>
-          <td>{{ row.date }}</td>
-          <td>{{ row.title }}</td>
-          <td>{{ row.author }}</td>
+          <td>{{ item.date }}</td>
+          <td>{{ item.title }}</td>
+          <td>{{ item.author }}</td>
         </tr>
 
       {% endfor %}
@@ -34,9 +40,38 @@
 
       </tbody>
     </table>
+
+
+    <div class="mobile d-block d-md-none">
+      {% for item in items %}
+        {% if loop.first %}
+          <div class="clearfix-archived my-4"></div>
+        {% endif %}
+
+        <div>
+          <div class="d-flex align-items-center gap-2 date">
+            <img width="20px" alt="" src="/{{ directory }}/image/icons/date.svg"/>
+            {{ item.date }}
+          </div>
+          <h4 class="my-2">
+            {{ item.title }}
+          </h4>
+          <span class="author">{{ item.author }}</span>
+        </div>
+
+        <div class="clearfix-archived my-4"></div>
+
+      {% endfor %}
+    </div>
+
+
+
   </div>
 
 </div>
+
+
+
 
 <div class="container">
   <div class="d-flex justify-content-between my-3 paging">

@@ -64,3 +64,31 @@ footer {
     }
   }
 }
+
+
+.partner {
+  background-color: #25ABE0;
+
+  span {
+    font-size: 18px;
+    color: #fff;
+    @include media-breakpoint-up(md) {
+      font-size: 25px;
+    }
+  }
+
+  .find {
+    a {
+      padding: 15px 25px;
+      background-color: #005BA6;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 20px;
+        padding: 25px 35px;
+      }
+    }
+  }
+}

@@ -28,7 +28,7 @@
       {{ item.date }}
     </div>
 
-    <div class="category">
+    <div class="category {{ item.category|lower }}">
       <a href="/?category={{ item.category }}">{{ item.category }}</a>
     </div>
 
@@ -41,7 +41,7 @@
 
 
   <div class="py-3">
-    <img alt="{{ item.title }}" class="avatar mw-100" src="{{ item.img_src }}"/>
+    <img alt="{{ item.title }}" class="avatar mw-100 {{ item.category|lower }}" src="{{ item.img_src }}"/>
   </div>
 
   {{ item.content|raw }}

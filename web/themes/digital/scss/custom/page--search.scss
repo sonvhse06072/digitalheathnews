@@ -47,6 +47,29 @@
         border-color: #005BA6;
       }
     }
+
+    .mobile {
+
+      .clearfix-archived {
+        border-top: 2px solid #25ABE0;
+      }
+
+      .date {
+        color: #393939;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+
+      .author {
+        font-size: 12px;
+      }
+
+    }
+
   }
 
   .paging {

@@ -11,3 +11,14 @@ it_app.search:
     _form: '\Drupal\digitalhealth\Form\SearchForm'
   requirements:
     _access: 'TRUE'
+
+
+it_app.load_article_ajax:
+  path: '/load-article/ajax'
+  defaults:
+    _controller: '\Drupal\digitalhealth\Controller\ArticleController::ajaxLoadArticle'
+    _title: 'AJAX Callback'
+  requirements:
+    _permission: 'access content'
+  options:
+    _ajax_route: TRUE
