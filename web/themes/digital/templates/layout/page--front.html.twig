@@ -1,4 +1,5 @@
 {% include '@components/_header.twig' %}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <main class="page--front">
 
@@ -74,7 +75,9 @@
           <h3 class="title text-decoration-underline d-none d-md-block">{{ 'Latest posts'|t }}</h3>
 
           <div class="box-content">
-            <img alt="" class="card-img-top" src="/themes/digital/image/bloger.jpg">
+
+            {{ page.home_social_left }}
+
           </div>
 
         </div>
@@ -83,7 +86,9 @@
           <h3 class="title text-decoration-underline d-none d-md-block">{{ 'Latest tweets'|t }}</h3>
 
           <div class="box-content">
-            <img alt="" class="card-img-top" src="/themes/digital/image/bloger.jpg">
+
+            {{ page.home_social_right }}
+
           </div>
 
         </div>

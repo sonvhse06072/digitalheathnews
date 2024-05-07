@@ -1,15 +1,16 @@
 {% include '@components/_header_search.twig' %}
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<main class="page--node">
+<main class="page--page py-5">
 
   <div class="d-none d-md-block">
     {{ page.socials }}
   </div>
 
-  {{ page.content }}
+  <div class="container">
 
-  {{ page.related_article }}
+    {{ page.content }}
+
+  </div>
 
 </main>
 

@@ -22,7 +22,8 @@ regions:
   related_article: Related article
   search_content: Search content
   search_archived: Search archived
-
+  home_social_left: Home social left
+  home_social_right: Home social right
 
 components:
   namespaces:

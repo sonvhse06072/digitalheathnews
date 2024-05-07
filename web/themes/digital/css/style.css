@@ -10931,7 +10931,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.min.css.map */
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -11543,6 +11543,93 @@ footer .footer-bottom .left strong:nth-last-child(1) {
 .page--search .paging a {
   color: #013765;
   font-size: 15px;
+}
+.page--search .pagination {
+  display: block !important;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.page--search .pagination .views-exposed-form, .page--search .pagination .views-row, .page--search .pagination .pager__item--first, .page--search .pagination .pager__item--previous, .page--search .pagination .pager__item--last {
+  display: none;
+}
+.page--search .pagination .pager__items {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+.page--search .pagination .pager__items li {
+  list-style: none;
+}
+.page--search .pagination .pager__items li a {
+  text-decoration: none;
+  color: #013765;
+}
+.page--search .pagination .pager__items li.is-active a {
+  color: #005BA6 !important;
+}
+.page--search .pagination .pager__item--next {
+  width: 100%;
+  text-align: end;
+}
+
+.page--page .list-social {
+  background-color: #005BA6;
+  flex-direction: column;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  top: 470px;
+}
+
+.web-form-contact h1 {
+  color: #005BA6;
+  text-align: center;
+}
+.web-form-contact .slogan {
+  color: #393939;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.web-form-contact .js-form-item {
+  margin-bottom: 15px;
+}
+.web-form-contact .webform-flexbox {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.web-form-contact label {
+  font-weight: 600;
+}
+.web-form-contact select, .web-form-contact input {
+  height: 50px;
+  border: 3px solid #005BA6 !important;
+  border-radius: 0;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  box-shadow: none !important;
+}
+.web-form-contact textarea {
+  height: 250px;
+  border: 3px solid #005BA6;
+  border-radius: 0;
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+}
+.web-form-contact #edit-actions {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.web-form-contact #edit-actions input {
+  background-color: #005BA6;
+  color: #fff;
+  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

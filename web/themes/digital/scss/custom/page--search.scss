@@ -29,6 +29,7 @@
     text-decoration: none;
     border: 1px solid #005BA6;
     font-weight: 500;
+
     &:hover {
       background-color: transparent;
       color: #005BA6;
@@ -77,5 +78,41 @@
       color: #013765;
       font-size: 15px;
     }
+  }
+
+  .pagination {
+    display: block !important;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    .views-exposed-form, .views-row, .pager__item--first, .pager__item--previous, .pager__item--last {
+      display: none;
+    }
+
+    .pager__items {
+      display: flex;
+      gap: 10px;
+      padding: 0;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: #013765;
+        }
+
+        &.is-active {
+          a {
+            color: #005BA6 !important;
+          }
+        }
+      }
+    }
+
+    .pager__item--next {
+      width: 100%;
+      text-align: end;
+    }
+
   }
 }
