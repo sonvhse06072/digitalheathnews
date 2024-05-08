@@ -33,6 +33,10 @@
           align-items: center;
           text-decoration: none;
 
+          &:hover {
+            border-radius: 30px;
+          }
+
           &.all {
             background-color: #fff;
             color: #005BA6;
@@ -41,7 +45,7 @@
 
           &.technology {
             background-color: #EF4123;
-            border-radius: 30px;
+            transition: 0.3s ease-in-out;
           }
 
           &.business {

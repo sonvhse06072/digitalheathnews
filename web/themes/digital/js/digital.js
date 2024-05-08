@@ -57,13 +57,13 @@
       });
 
       $('.toggle-bar').click(function () {
-        $('.sidebar-menu').toggleClass('active');
-        $('body').toggleClass('overflow-hidden');
+        $('.sidebar-menu').addClass('active');
+        $('body').addClass('overflow-hidden');
       })
 
       $('.close-menu').click(function () {
-        $('.sidebar-menu').toggleClass('active');
-        $('body').toggleClass('overflow-hidden');
+        $('.sidebar-menu').removeClass('active');
+        $('body').removeClass('overflow-hidden');
       })
 
       $('.sort-by').change(function () {
