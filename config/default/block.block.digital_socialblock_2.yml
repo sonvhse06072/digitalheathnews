@@ -1,0 +1,21 @@
+uuid: 0fbab9a8-12b7-40f0-8093-6aa0bcc28e51
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalhealth
+  theme:
+    - digital
+id: digital_socialblock_2
+theme: digital
+region: home_social_right
+weight: -12
+provider: null
+plugin: social_block
+settings:
+  id: social_block
+  label: Twitter
+  label_display: visible
+  provider: digitalhealth
+  content: '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">For secure access to your health information whenever it&#39;s needed, make sure your My Health Record is linked to myGov. Visit <a href="https://t.co/mj2nDHW9Jh">https://t.co/mj2nDHW9Jh</a> to learn how. <a href="https://twitter.com/hashtag/DigitalHealth?src=hash&amp;ref_src=twsrc%5Etfw">#DigitalHealth</a> <a href="https://twitter.com/hashtag/MyHealthRecord?src=hash&amp;ref_src=twsrc%5Etfw">#MyHealthRecord</a>. <a href="https://t.co/UmADKKVgNq">pic.twitter.com/UmADKKVgNq</a></p>&mdash; Digital Health AU (@AuDigitalHealth) <a href="https://twitter.com/AuDigitalHealth/status/1744502347030831512?ref_src=twsrc%5Etfw">January 8, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: b166635f-d952-47af-9e81-366b537977f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalhealth
+  theme:
+    - digital
+id: digital_socialblock
+theme: digital
+region: home_social_left
+weight: -13
+provider: null
+plugin: social_block
+settings:
+  id: social_block
+  label: facebook
+  label_display: '0'
+  provider: digitalhealth
+  content: "            <div class=\"fb-page\" data-href=\"https://www.facebook.com/AuDigitalHealth\" data-tabs=\"timeline\"\r\n                 data-width=\"1000\" data-height=\"\" data-small-header=\"false\" data-adapt-container-width=\"true\"\r\n                 data-hide-cover=\"true\" data-show-facepile=\"true\">\r\n              <blockquote cite=\"https://www.facebook.com/AuDigitalHealth\" class=\"fb-xfbml-parse-ignore\"><a\r\n                  href=\"https://www.facebook.com/AuDigitalHealth\">Australian Digital Health Agency</a></blockquote>\r\n            </div>"
+visibility: {  }

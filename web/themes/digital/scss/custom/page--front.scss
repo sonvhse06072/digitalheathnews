@@ -32,6 +32,7 @@
           justify-content: center;
           align-items: center;
           text-decoration: none;
+          transition: 0.3s ease-in-out;
 
           &:hover {
             border-radius: 30px;
@@ -45,7 +46,6 @@
 
           &.technology {
             background-color: #EF4123;
-            transition: 0.3s ease-in-out;
           }
 
           &.business {
