@@ -15,6 +15,41 @@
 
 
 .web-form-contact {
+  max-width: 946px;
+  margin: auto;
+
+  #edit-flexbox-01 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      margin-top: 50px;
+      margin-bottom: 60px;
+      align-items: end;
+    }
+  }
+
+  .captcha {
+    .captcha__title {
+      display: none;
+    }
+    .captcha__description {
+      display: none;
+    }
+    .description, .reload-captcha-wrapper {
+      display: none;
+    }
+
+    .captcha__element {
+      display: flex;
+      align-items: end;
+      img {
+        margin: 0;
+      }
+    }
+  }
 
   h1 {
       color: #005BA6;
@@ -64,8 +99,7 @@
   }
 
   #edit-actions {
-    margin-top: 50px;
-    margin-bottom: 60px;
+
 
     input {
       background-color: #005BA6;

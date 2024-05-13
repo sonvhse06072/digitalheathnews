@@ -13,7 +13,8 @@
         "img_src": item._entity.field_image.entity.uri.url,
         "date": item._entity.changed.value|date("d M Y"),
         "category": item._entity.field_category.entity.name.value,
-        "author": item._entity.uid.entity.name.value
+        "author": item._entity.uid.entity.name.value,
+        "link_user": "/user-info/" ~ item._entity.uid.0.target_id
       } %}
 
       <div class="col-12 col-md-6 col-lg-4 col-xl-3">

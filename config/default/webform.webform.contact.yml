@@ -25,31 +25,40 @@ elements: |-
       a: a
       b: b
       c: c
+    '#required': true
   flexbox:
     '#type': webform_flexbox
     first_name:
       '#type': textfield
       '#title': 'First Name'
+      '#required': true
     last_name:
       '#type': textfield
       '#title': 'Last Name'
+      '#required': true
   email:
     '#type': email
     '#title': Email
-    '#required': true
     '#default_value': '[current-user:mail]'
+    '#required': true
   last_namedemo:
     '#type': textfield
     '#title': 'Telephone Number'
+    '#required': true
   message:
     '#title': Message
     '#type': textarea
-    '#required': true
     '#test': 'Please ignore this email.'
-  actions:
-    '#type': webform_actions
-    '#title': 'Submit button(s)'
-    '#submit__label': 'Send message'
+    '#required': true
+  flexbox_01:
+    '#type': webform_flexbox
+    actions:
+      '#type': webform_actions
+      '#title': 'Submit button(s)'
+      '#submit__label': Submit
+    captcha:
+      '#type': captcha
+      '#captcha_type': image_captcha/Image
 css: ''
 javascript: ''
 settings:

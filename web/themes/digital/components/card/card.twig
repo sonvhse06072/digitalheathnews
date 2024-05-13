@@ -10,8 +10,10 @@
     <a href="{{ data.link_url }}" class="text-decoration-none text-dark"><strong>{{ 'Read more'|t }}</strong></a>
 
     <div class="card-meta d-flex justify-content-between align-items-center mt-4 gap-3">
-      <span>{{ data.author }}</span>
-      <a href="?category={{ data.category }}">{{ data.category }}</a>
+      <span>
+        <a href="{{ data.link_user }}">{{ data.author }}</a>
+      </span>
+      <a class="category" href="?category={{ data.category }}">{{ data.category }}</a>
     </div>
   </div>
 </div>

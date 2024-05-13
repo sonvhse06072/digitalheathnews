@@ -18,6 +18,10 @@
     color: #005BA6;
   }
 
+  .author {
+    color: #005BA6;
+  }
+
   .avatar {
     border-radius: 0;
     border-right: 20px solid #EF4123;
@@ -166,6 +170,72 @@
     position: fixed;
     left: 0;
     top: 470px;
+  }
+
+  .modal-social-node {
+
+    .btn-close {
+      background: url("/themes/digital/image/icons/close-white.svg") center/1em auto no-repeat;
+    }
+
+    .modal-content {
+      border-radius: 0;
+      background-color: #005BA6;
+      color: #fff;
+
+      .modal-header {
+        border: none;
+        padding: 30px 30px 10px 30px;
+        div {
+          cursor: pointer;
+        }
+      }
+
+      .modal-body {
+        padding: 16px 16px 60px 16px;
+        min-height: 450px;
+
+        h2 {
+          font-size: 18px;
+
+          @include media-breakpoint-up(md) {
+            font-size: 30px;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  .list-social-node {
+    margin-top: auto;
+    display: flex;
+    gap: 16px;
+    .item {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 50%;
+
+      @include media-breakpoint-up(md) {
+        width: 70px;
+        height: 70px;
+      }
+
+      img {
+        width: 18px;
+        height: 18px;
+
+        @include media-breakpoint-up(md) {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
   }
 
 }
