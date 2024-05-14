@@ -38,7 +38,7 @@ class ArticleController
       $date = date("d M Y", $row->_entity->changed->value);
       $category = $row->_entity->field_category->entity->name->value;
       $author = $row->_entity->uid->entity->name->value;
-
+      $uid = $row->_entity->uid[0]->target_id;
 
       $html .= '<div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card ' . strtolower($category) . '">
@@ -52,8 +52,10 @@ class ArticleController
                           <p class="card-text">' . ($description) . '</p>
                           <a href="' . $link_url . '" class="text-decoration-none text-dark"><strong>' . t("Read more") . '</strong></a>
                           <div class="card-meta d-flex justify-content-between align-items-center mt-4 gap-3">
-                            <span>' . $author . '</span>
-                            <a href="?category=' . $category . '">' . $category . '</a>
+                            <span>
+                                <a href="/user-info/'. $uid .'">' . $author . '</a>
+                            </span>
+                            <a class="card-category" href="?category=' . $category . '">' . $category . '</a>
                           </div>
                         </div>
                       </div>

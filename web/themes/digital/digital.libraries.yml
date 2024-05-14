@@ -7,5 +7,5 @@ global:
   js:
     js/bootstrap.min.js: { }
     js/masonry.pkgd.min.js: { }
-    js/jquery.min.js: { }
+#    js/jquery.min.js: { }
     js/digital.js: { }
