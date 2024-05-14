@@ -11002,7 +11002,7 @@ body {
 .card .card-meta span a {
   color: #393939;
 }
-.card .card-meta .category {
+.card .card-meta .card-category {
   font-size: 13px;
   border: 2px solid #000;
   padding: 5px 20px;
@@ -11448,52 +11448,6 @@ footer .footer-bottom .left strong:nth-last-child(1) {
 .page--node .related .title {
   font-weight: 700;
   color: #005BA6;
-}
-.page--node .related .list-item .card {
-  border-radius: 0;
-  border-right: 20px solid #EF4123;
-  border-bottom: 20px solid #EF4123;
-  border-left: none;
-  border-top: none;
-}
-.page--node .related .list-item .card.technology {
-  border-color: #EF4123;
-}
-.page--node .related .list-item .card.business {
-  border-color: #005826;
-}
-.page--node .related .list-item .card.lifestyle {
-  border-color: #8DC63F;
-}
-.page--node .related .list-item .card.features {
-  border-color: #25ABE0;
-}
-.page--node .related .list-item .card .card-img-top {
-  border-radius: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-.page--node .related .list-item .card .date {
-  color: #393939;
-  font-size: 13px;
-}
-.page--node .related .list-item .card .card-title {
-  font-size: 16px;
-}
-.page--node .related .list-item .card .card-text {
-  font-size: 14px;
-}
-.page--node .related .list-item .card .card-meta span {
-  font-size: 12px;
-  color: #393939;
-}
-.page--node .related .list-item .card .card-meta a {
-  font-size: 13px;
-  border: 2px solid #000;
-  padding: 5px 20px;
-  color: #000;
-  text-decoration: none;
-  font-weight: 700;
 }
 .page--node .list-social {
   background-color: #005BA6;
