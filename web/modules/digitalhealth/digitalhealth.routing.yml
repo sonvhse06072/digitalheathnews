@@ -22,3 +22,12 @@ it_app.load_article_ajax:
     _permission: 'access content'
   options:
     _ajax_route: TRUE
+
+
+it_app.popup_module.settings:
+  path: '/admin/config/popup-settings'
+  defaults:
+    _form: '\Drupal\digitalhealth\Form\PopupSettingsForm'
+    _title: 'Popup Settings'
+  requirements:
+    _permission: 'administer site configuration'

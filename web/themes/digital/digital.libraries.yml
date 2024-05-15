@@ -9,3 +9,10 @@ global:
     js/masonry.pkgd.min.js: { }
 #    js/jquery.min.js: { }
     js/digital.js: { }
+
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal
+    - core/js-cookie
+    - drupal/js_cookie

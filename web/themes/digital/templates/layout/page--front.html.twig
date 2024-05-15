@@ -22,10 +22,10 @@
               <div class="col-auto">
                 <div class="filter">
                   <a href="/" class="all">{{ 'All'|t }}</a>
-                  <a href="?category=Technology" class="technology">{{ 'Technology'|t }}</a>
-                  <a href="?category=Business" class="business">{{ 'Business'|t }}</a>
-                  <a href="?category=Lifestyle" class="lifestyle">{{ 'Lifestyle'|t }}</a>
-                  <a href="?category=Features" class="features">{{ 'Features'|t }}</a>
+                  <a href="?category=Technology" class="technology {{ url_parameters['category'] == 'Technology' ? 'active' : '' }}">{{ 'Technology'|t }}</a>
+                  <a href="?category=Business" class="business {{ url_parameters['category'] == 'Business' ? 'active' : '' }}">{{ 'Business'|t }}</a>
+                  <a href="?category=Lifestyle" class="lifestyle {{ url_parameters['category'] == 'Lifestyle' ? 'active' : '' }}">{{ 'Lifestyle'|t }}</a>
+                  <a href="?category=Features" class="features {{ url_parameters['category'] == 'Features' ? 'active' : '' }}">{{ 'Features'|t }}</a>
                 </div>
               </div>
               <div class="col-auto d-none d-md-block">

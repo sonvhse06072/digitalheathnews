@@ -1,6 +1,6 @@
 {% set items = [] %}
 
-<div class="row g-3 list-item pb-5">
+<div class="list-item pb-5">
   {% set rows = content['view_build']['#view'].result %}
 
   {% if rows %}
@@ -17,11 +17,11 @@
         "link_user": "/user-info/" ~ item._entity.uid.0.target_id
       } %}
 
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+{#      <div class="col-12 col-md-6 col-lg-4 col-xl-3">#}
         {% include '@components/card/card.twig' with {
           "data": row
         } %}
-      </div>
+{#      </div>#}
 
     {% endfor %}
 
@@ -41,3 +41,4 @@
 {% endif %}
 
 {% set catch_cache = content|render %}
+

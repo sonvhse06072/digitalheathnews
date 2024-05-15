@@ -1,1 +1,16 @@
 <?php
+
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function digitalhealth_page_attachments(array &$attachments) {
+  $config = \Drupal::config('popup_module.settings');
+  $attachments['#attached']['drupalSettings']['popup_module'] = [
+    'displayAfter' => $config->get('display_after'),
+    'cookieLifetime' => $config->get('cookie_lifetime'),
+    'popupContent' => $config->get('popup_content'),
+  ];
+}

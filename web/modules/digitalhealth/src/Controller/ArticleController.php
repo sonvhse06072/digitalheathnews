@@ -4,9 +4,6 @@ namespace Drupal\digitalhealth\Controller;
 
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\HtmlCommand;
-use Drupal\Core\Render\AttachmentsInterface;
-use Drupal\Core\Render\BubbleableMetadata;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 class ArticleController
@@ -40,8 +37,7 @@ class ArticleController
       $author = $row->_entity->uid->entity->name->value;
       $uid = $row->_entity->uid[0]->target_id;
 
-      $html .= '<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card ' . strtolower($category) . '">
+      $html .= '<div class="card ' . strtolower($category) . '">
                         <img alt="" class="card-img-top" src="' . $img_src . '">
                         <div class="card-body">
                           <div class="date d-flex align-items-center gap-2">
@@ -58,8 +54,7 @@ class ArticleController
                             <a class="card-category" href="?category=' . $category . '">' . $category . '</a>
                           </div>
                         </div>
-                      </div>
-                </div>';
+               </div>';
     }
 
     $response = new AjaxResponse();
