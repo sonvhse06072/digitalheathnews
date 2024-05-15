@@ -7,7 +7,7 @@
 
     <h2 class="text-center title mb-5">{{ 'Related articles'|t }}</h2>
 
-    <div class="row g-3 list-item" data-masonry='{"percentPosition": true }'>
+    <div class="list-item">
       {% set rows = content['view_build']['#view'].result %}
 
       {% if rows %}
@@ -24,11 +24,9 @@
             "link_user": "/user-info/" ~ item._entity.uid.0.target_id
           } %}
 
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            {% include '@components/card/card.twig' with {
-              "data": row
-            } %}
-          </div>
+          {% include '@components/card/card.twig' with {
+            "data": row
+          } %}
 
         {% endfor %}
 

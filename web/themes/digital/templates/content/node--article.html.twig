@@ -28,6 +28,10 @@
       {{ item.date }}
     </div>
 
+    <div class="d-none d-md-block category {{ item.category|lower }}">
+      <a href="/?category={{ item.category }}">{{ item.category }}</a>
+    </div>
+
   </div>
 
 
@@ -39,7 +43,7 @@
         {{ item.author }}
       </a>
     </span>
-    <div class="category {{ item.category|lower }}">
+    <div class="d-block d-md-none category {{ item.category|lower }}">
       <a href="/?category={{ item.category }}">{{ item.category }}</a>
     </div>
   </div>

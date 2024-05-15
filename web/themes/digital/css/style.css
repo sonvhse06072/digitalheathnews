@@ -10957,16 +10957,19 @@ body {
 @media (min-width: 768px) {
   .list-item {
     column-count: 2;
+    column-gap: 15px;
   }
 }
 @media (min-width: 992px) {
   .list-item {
     column-count: 3;
+    column-gap: 20px;
   }
 }
 @media (min-width: 1200px) {
   .list-item {
     column-count: 4;
+    column-gap: 25px;
   }
 }
 .list-item .card {
@@ -10976,6 +10979,21 @@ body {
   break-inside: avoid;
   margin-bottom: 10px;
   page-break-inside: avoid;
+}
+@media (min-width: 768px) {
+  .list-item .card {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .list-item .card {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .list-item .card {
+    margin-bottom: 25px;
+  }
 }
 
 .card {
@@ -11192,8 +11210,7 @@ header .box-menu .menu a.active {
 }
 header .box-menu .menu-mobile .search {
   position: relative;
-  border: 1px solid #fff;
-  border-radius: 2px;
+  border: 2px solid #fff;
 }
 header .box-menu .menu-mobile .search img {
   position: absolute;
@@ -11212,7 +11229,6 @@ header .box-menu .menu-mobile .search input {
   height: 33px;
   text-align: end;
   width: 100%;
-  border-radius: 2px;
 }
 header .box-menu .menu-mobile .search input::placeholder {
   color: #fff;
@@ -11310,6 +11326,17 @@ header .box-menu .menu-mobile .search input::placeholder {
   height: 20px;
 }
 
+.box-logo {
+  z-index: 9;
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+@media (min-width: 768px) {
+  .box-logo {
+    position: unset;
+  }
+}
 .box-logo .search {
   height: 40px;
   border: 1px solid #005BA6;

@@ -13,7 +13,7 @@ class PopupSettingsForm extends ConfigFormBase
    */
   protected function getEditableConfigNames()
   {
-    return ['popup_module.settings'];
+    return ['digitalhealth.popup_module.settings'];
   }
 
   /**
@@ -29,7 +29,7 @@ class PopupSettingsForm extends ConfigFormBase
    */
   public function buildForm(array $form, FormStateInterface $form_state)
   {
-    $config = $this->config('popup_module.settings');
+    $config = $this->config('digitalhealth.popup_module.settings');
 
     $form['popup_title'] = [
       '#type' => 'textarea',
@@ -66,7 +66,7 @@ class PopupSettingsForm extends ConfigFormBase
    */
   public function submitForm(array &$form, FormStateInterface $form_state)
   {
-    $this->config('popup_module.settings')
+    $this->config('digitalhealth.popup_module.settings')
       ->set('popup_title', $form_state->getValue('popup_title'))
       ->set('popup_content', $form_state->getValue('popup_content'))
       ->set('display_after', $form_state->getValue('display_after'))

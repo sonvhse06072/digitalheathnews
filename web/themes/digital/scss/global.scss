@@ -22,14 +22,17 @@ body {
 
   @include media-breakpoint-up(md) {
     column-count: 2;
+    column-gap: 15px;
   }
 
   @include media-breakpoint-up(lg) {
     column-count: 3;
+    column-gap: 20px;
   }
 
   @include media-breakpoint-up(xl) {
     column-count: 4;
+    column-gap: 25px;
   }
 
   .card  {
@@ -39,6 +42,19 @@ body {
     break-inside: avoid;
     margin-bottom: 10px;
     page-break-inside: avoid;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 15px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 25px;
+    }
+
   }
 }
 

@@ -25,8 +25,7 @@ header {
     .menu-mobile {
       .search {
         position: relative;
-        border: 1px solid #fff;
-        border-radius: 2px;
+        border: 2px solid #fff;
         img {
           position: absolute;
           top: 0;
@@ -45,7 +44,6 @@ header {
           height: 33px;
           text-align: end;
           width: 100%;
-          border-radius: 2px;
           &::placeholder {
             color: #fff;
           }
@@ -172,6 +170,15 @@ header {
 
 
 .box-logo {
+  z-index: 9;
+  background: #fff;
+  position: sticky;
+  top: 0;
+
+  @include media-breakpoint-up(md) {
+    position: unset;
+  }
+
   .search {
     height: 40px;
     border: 1px solid #005BA6;

@@ -74,7 +74,6 @@
 
       var popupDisplayed = Cookies.get('popupDisplayed');
       var displayAfter = drupalSettings.popup_module.displayAfter || 50;
-      // var cookieLifetime = drupalSettings.popup_module.cookieLifetime || 30;
 
       if (!popupDisplayed) {
         setTimeout(function () {
@@ -87,7 +86,7 @@
           $('.close-popup').click(function () {
             $('.popup-overlay').removeClass('active')
             const current_time = new Date();
-            let expirationDate = new Date(current_time.getTime() + (Number(drupalSettings.popup_module.cookieLifetime) * 24 * 60 * 60 * 1000)); // Thời gian hiện tại + 30 ngày
+            let expirationDate = new Date(current_time.getTime() + (Number(drupalSettings.popup_module.cookieLifetime) * 24 * 60 * 60 * 1000));
             Cookies.set('popupDisplayed', 'true', { expires: expirationDate });
           });
         }, displayAfter * 1000);
