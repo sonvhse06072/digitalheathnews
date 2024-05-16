@@ -11136,24 +11136,8 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
-}
-@media (min-width: 768px) {
-  .popup-overlay .close-popup {
-    width: 34px;
-    height: 34px;
-  }
-}
-@media (min-width: 992px) {
-  .popup-overlay .close-popup {
-    width: 44px;
-    height: 44px;
-  }
-}
-@media (min-width: 1200px) {
-  .popup-overlay .close-popup {
-    width: 55px;
-    height: 55px;
-  }
+  width: 34px;
+  height: 34px;
 }
 .popup-overlay .list-social .item {
   width: 40px;
@@ -11300,9 +11284,12 @@ header .box-menu .menu-mobile .search input::placeholder {
   margin-top: 30px;
 }
 .sidebar-menu .content .menu-topic li a {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   color: #fff;
+}
+.sidebar-menu .content .menu-topic li a.active {
+  color: #25ABE0;
 }
 .sidebar-menu .content .menu-mobile {
   padding: 0;

@@ -127,9 +127,13 @@ header {
       li {
         margin-top: 30px;
         a {
-          font-size: 30px;
+          font-size: 26px;
           font-weight: 700;
           color: #fff;
+
+          &.active {
+            color: #25ABE0;
+          }
         }
       }
 

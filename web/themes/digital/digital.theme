@@ -12,6 +12,13 @@ function digital_preprocess_page(&$variables) {
   $variables['url_parameters'] = $query;
 }
 
+/**
+ * Implements hook_preprocess_node().
+ */
+function digital_preprocess_menu(array &$variables) {
+  $query = \Drupal::request()->query->all();
+  $variables['url_parameters'] = $query;
+}
 
 /**
  * Implements hook_theme_suggestions_page_alter().
