@@ -17,6 +17,9 @@ settings:
     -
       value: about_us_v2
       label: 'About us v2'
+    -
+      value: contact
+      label: Contact
   allowed_values_function: ''
 module: options
 locked: false
