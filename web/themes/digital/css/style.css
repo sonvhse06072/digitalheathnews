@@ -11862,4 +11862,74 @@ footer .footer-bottom .left strong:nth-last-child(1) {
   width: 200px;
 }
 
+.page--page--about-us-v1 h1 {
+  text-align: center;
+  color: #005BA6;
+}
+.page--page--about-us-v1 p {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .page--page--about-us-v1 p {
+    font-size: 25px;
+  }
+}
+
+.page--page--about-us-v2 {
+  background-color: #E6E6E6;
+}
+.page--page--about-us-v2 h1 {
+  color: #005BA6;
+}
+@media (min-width: 768px) {
+  .page--page--about-us-v2 p {
+    font-size: 18px;
+    -webkit-line-clamp: 3;
+  }
+}
+@media (min-width: 992px) {
+  .page--page--about-us-v2 p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .page--page--about-us-v2 p {
+    font-size: 25px;
+  }
+}
+
+.bottom-about-us-v2 h3 {
+  color: #005BA6;
+  margin-top: 10px;
+}
+.bottom-about-us-v2 p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+@media (min-width: 768px) {
+  .bottom-about-us-v2 p {
+    font-size: 18px;
+    -webkit-line-clamp: 3;
+  }
+}
+@media (min-width: 992px) {
+  .bottom-about-us-v2 p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .bottom-about-us-v2 p {
+    font-size: 25px;
+  }
+}
+
+.page-normal h1 {
+  color: #005BA6;
+}
+.page-normal .page-normal-content {
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */

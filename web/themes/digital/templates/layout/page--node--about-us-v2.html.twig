@@ -1,0 +1,101 @@
+{% include '@components/_header_search.twig' %}
+
+<main class="page--page py-5 page--page--about-us-v2">
+
+  <div class="d-none d-md-block">
+    {{ page.socials }}
+  </div>
+
+  <div class="container">
+
+    {{ page.content }}
+
+{#    Data dummy#}
+
+{#    <div class="row align-items-center g-3 g-md-4 g-xl-5">#}
+
+{#      <div class="col-md-6 d-block d-md-none text-center">#}
+
+{#        <h1>About us</h1>#}
+
+{#        <p class="text-center text-md-start">#}
+{#          The Australian Digital Health Agency (the Agency) is a corporate Commonwealth entity established by the Public Governance, Performance and Accountability (Establishing the Australian Digital Health Agency) Rule 2016.#}
+{#        </p>#}
+
+{#      </div>#}
+
+{#      <div class="col-md-6">#}
+
+{#        <img width="100%" src="/themes/digital/image/image1.png">#}
+
+{#      </div>#}
+
+{#      <div class="col-md-6 d-none d-md-block">#}
+
+{#        <h1>About us</h1>#}
+
+{#        <p class="text-center text-md-start">#}
+{#          The Australian Digital Health Agency (the Agency) is a corporate Commonwealth entity established by the Public Governance, Performance and Accountability (Establishing the Australian Digital Health Agency) Rule 2016.#}
+{#        </p>#}
+
+{#      </div>#}
+
+{#    </div>#}
+
+  </div>
+
+
+</main>
+
+<div class="bottom-about-us-v2 py-5">
+
+  <div class="container">
+
+    <div class="row g-4">
+
+      <div class="col-lg-6">
+
+        <div class="d-flex gap-4 flex-column flex-sm-row text-center text-sm-start">
+
+          <h3 class="d-block d-sm-none">{{ 'Our vision' }}</h3>
+
+
+          <div>
+            <img alt="" src="/{{ directory }}/image/icons/outlook.svg" />
+          </div>
+
+          <div>
+            <h3 class="d-none d-sm-block">{{ 'Our vision' }}</h3>
+            <p>{{ 'Our vision is for a healthier future for Australians through connected healthcare and to create a collaborative environment to accelerate adoption and use of innovative digital services and technologies.' }}</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="d-flex gap-4 flex-column flex-sm-row text-center text-sm-start">
+          <h3 class="d-block d-sm-none">{{ 'Our mission' }}</h3>
+
+          <div>
+            <img alt="" src="/{{ directory }}/image/icons/dart.svg" />
+          </div>
+
+          <div>
+            <h3 class="d-none d-sm-block">{{ 'Our mission' }}</h3>
+            <p>{{ 'To create a collaborative environment to accelerate adoption and use of innovative digital services and technologies.' }}</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{#{% include '@components/_partner.twig' %}#}
+{% include '@components/_footer.twig' %}

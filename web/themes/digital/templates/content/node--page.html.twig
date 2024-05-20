@@ -1,0 +1,25 @@
+{% set templates_1 = ["contact"] %}
+{% set templates_2 = ["about_us_v1", "about_us_v2", "contact"] %}
+{% if node.field_template.value in templates_1 %}
+
+  {{ content.field_webform }}
+
+{% elseif node.field_template.value in templates_2 %}
+
+  {{ content.body }}
+
+{% else %}
+
+  <div class="page-normal">
+
+    <h1 class="mb-3 mb-lg-4 mb-xl-5">{{ label }}</h1>
+
+    <div class="page-normal-content">
+      {{ content.body }}
+    </div>
+
+  </div>
+
+{% endif %}
+
+

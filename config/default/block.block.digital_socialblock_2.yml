@@ -1,6 +1,6 @@
 uuid: 0fbab9a8-12b7-40f0-8093-6aa0bcc28e51
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - digitalhealth

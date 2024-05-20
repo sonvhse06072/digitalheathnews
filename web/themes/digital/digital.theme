@@ -31,6 +31,15 @@ function digital_theme_suggestions_page_alter(array &$suggestions, array $variab
       $node = \Drupal::routeMatch()->getParameter('node');
       if ($node) {
         $suggestions[] = 'page__node__' . $node->getType();
+
+        if($node->getType() == 'page'){
+           if($node->get('field_template')){
+              if($node->get('field_template')->value){
+                  $suggestions[] = 'page__node__' . $node->get('field_template')->value;
+              }
+           }
+        }
+
       }
       break;
 

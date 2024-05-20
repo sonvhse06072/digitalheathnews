@@ -1,0 +1,27 @@
+uuid: 8fab94aa-b53f-4b1f-8b39-d3fed762b8ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_template
+field_name: field_template
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: about_us_v1
+      label: 'About us v1'
+    -
+      value: about_us_v2
+      label: 'About us v2'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

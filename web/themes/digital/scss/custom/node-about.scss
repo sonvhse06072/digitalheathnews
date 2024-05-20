@@ -1,0 +1,64 @@
+.page--page--about-us-v1 {
+  h1 {
+    text-align: center;
+    color: #005BA6;
+  }
+
+  p {
+    font-size: 18px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 25px;
+    }
+  }
+}
+
+
+.page--page--about-us-v2 {
+  background-color: #E6E6E6;
+  h1 {
+    color: #005BA6;
+  }
+
+  p {
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      -webkit-line-clamp: 3;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 25px;
+    }
+  }
+}
+
+.bottom-about-us-v2 {
+
+
+  h3 {
+    color: #005BA6;
+    margin-top: 10px;
+  }
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+
+    @include media-breakpoint-up(md) {
+      font-size: 18px;
+      -webkit-line-clamp: 3;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 25px;
+    }
+  }
+}
