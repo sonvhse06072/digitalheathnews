@@ -38,13 +38,15 @@ class ArticleController
       $uid = $row->_entity->uid[0]->target_id;
 
       $html .= '<div class="card ' . strtolower($category) . '">
-                        <img alt="" class="card-img-top" src="' . $img_src . '">
+                        <a href="'.$link_url.'"><img alt="" class="card-img-top" src="' . $img_src . '"></a>
                         <div class="card-body">
                           <div class="date d-flex align-items-center gap-2">
                             <img width="15px" alt="" src="/themes/digital/image/icons/date.svg">
                             ' . $date . '
                           </div>
-                          <h5 class="card-title mt-3 fw-bold">' . $title . '</h5>
+                          <h5 class="card-title mt-3 fw-bold">
+                            <a href="'.$link_url.'">'. $title .'</a>
+                          </h5>
                           <p class="card-text">' . ($description) . '</p>
                           <a href="' . $link_url . '" class="text-decoration-none text-dark"><strong>' . t("Read more") . '</strong></a>
                           <div class="card-meta d-flex justify-content-between align-items-center mt-4 gap-3">

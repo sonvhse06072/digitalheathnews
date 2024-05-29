@@ -11932,4 +11932,29 @@ footer .footer-bottom .left strong:nth-last-child(1) {
   font-size: 16px;
 }
 
+.user-login-form {
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  height: 600px;
+}
+.user-login-form label {
+  color: #000;
+}
+.user-login-form input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  outline: none !important;
+  box-shadow: none;
+  border-radius: 4px;
+  padding: 0 10px;
+  border: 1px solid #000;
+  color: #000;
+}
+.user-login-form .form-submit {
+  background-color: #005BA6;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
