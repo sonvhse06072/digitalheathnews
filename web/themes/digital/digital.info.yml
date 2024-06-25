@@ -24,6 +24,9 @@ regions:
   search_archived: Search archived
   home_social_left: Home social left
   home_social_right: Home social right
+  search_autocomplete: Search autocomplete
+  search_autocomplete_mobile_1: Search autocomplete mobile 1
+  search_autocomplete_mobile_2: Search autocomplete mobile 2
 
 components:
   namespaces:

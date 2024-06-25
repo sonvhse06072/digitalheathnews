@@ -4,12 +4,7 @@
       <a href="/">
         <img alt="" width="280px" src="/{{ directory }}/image/logo.jpg"/>
       </a>
-      <form method="GET" action="/search" class="d-none d-md-block">
-        <div class="search">
-          <img alt="" width="20px" src="/{{ directory }}/image/icons/search-blue.svg"/>
-          <input class="search-input" name="keyword" placeholder="Search" value="{{ url_parameters.keyword ?? "" }}"/>
-        </div>
-      </form>
+      {{ page.search_autocomplete }}
       <div class="toggle-bar d-block d-md-none">
         <img alt="" width="50px" src="/{{ directory }}/image/icons/menu.svg"/>
       </div>
@@ -31,12 +26,7 @@
           <span class="text-white nowrap">{{ 'Follow Us'|t }}</span>
           {{ page.socials }}
         </div>
-        <form method="GET" action="/search">
-          <div class="search">
-            <img alt="" width="15px" src="/{{ directory }}/image/icons/search-white.svg"/>
-            <input class="search-input" name="keyword" placeholder="Search" value="{{ url_parameters.keyword ?? '' }}">
-          </div>
-        </form>
+        {{ page.search_autocomplete_mobile_1 }}
       </div>
 
     </div>
@@ -49,11 +39,7 @@
 <div class="sidebar-menu">
   <div class="top d-flex align-items-center">
     <div class="gap-5 container d-flex justify-content-between align-items-center">
-      <div class="search w-100">
-        <img alt="" width="25px" src="/{{ directory }}/image/icons/search-white.svg"/>
-        <input placeholder="Search">
-      </div>
-
+      {{ page.search_autocomplete_mobile_2 }}
       <div class="close-menu">
         <img alt="" width="40px" src="/{{ directory }}/image/icons/close.svg"/>
       </div>

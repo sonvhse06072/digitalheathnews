@@ -11230,6 +11230,12 @@ header .box-menu .menu-mobile .search input::placeholder {
   left: 0;
   width: 100vw;
 }
+.sidebar-menu.active .search {
+  width: 100%;
+}
+.sidebar-menu .search {
+  width: 0;
+}
 .sidebar-menu .top {
   background-color: #25ABE0;
   height: 90px;

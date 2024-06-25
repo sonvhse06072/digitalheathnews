@@ -65,8 +65,14 @@ header {
     left: 0;
     width: 100vw;
     //right: 0;
-  }
 
+    .search {
+      width: 100%;
+    }
+  }
+  .search {
+    width: 0;
+  }
   .top {
     background-color: #25ABE0;
     height: 90px;

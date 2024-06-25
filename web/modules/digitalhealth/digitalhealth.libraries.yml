@@ -1,0 +1,13 @@
+autocomplete:
+  version: 1.x
+  css:
+    theme:
+      css/autocomplete.css: {}
+  js:
+    js/autocomplete.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.ui.autocomplete
+    - core/jquery.once

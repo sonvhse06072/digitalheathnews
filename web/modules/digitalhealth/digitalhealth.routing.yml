@@ -31,3 +31,12 @@ it_app.popup_module.settings:
     _title: 'Popup Settings'
   requirements:
     _permission: 'administer site configuration'
+
+
+it_app.suggestions:
+  path: '/autocomplete/suggestions'
+  defaults:
+    _controller: '\Drupal\digitalhealth\Controller\AutocompleteController::suggestions'
+    _title: 'Autocomplete Suggestions'
+  requirements:
+    _permission: 'access content'
