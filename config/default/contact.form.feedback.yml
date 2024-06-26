@@ -7,7 +7,8 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - sonvh.solid@gmail.com
+  - leighmorrow60@gmail.com
+  - social@digitalhealth.gov.au
 reply: ''
 weight: 0
 message: 'Your message has been sent.'
