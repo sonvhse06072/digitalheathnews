@@ -20,11 +20,20 @@ categories: {  }
 elements: |-
   what_type_of_insert_here:
     '#type': select
-    '#title': 'What type of <insert here>'
+    '#title': 'What type of user are you?'
     '#options':
       a: a
       b: b
       c: c
+    '#required': true
+  subject:
+    '#type': textfield
+    '#title': Subject
+    '#required': true
+  message:
+    '#title': Message
+    '#type': textarea
+    '#test': 'Please ignore this email.'
     '#required': true
   flexbox:
     '#type': webform_flexbox
@@ -40,15 +49,6 @@ elements: |-
     '#type': email
     '#title': Email
     '#default_value': '[current-user:mail]'
-    '#required': true
-  last_namedemo:
-    '#type': textfield
-    '#title': 'Telephone Number'
-    '#required': true
-  message:
-    '#title': Message
-    '#type': textarea
-    '#test': 'Please ignore this email.'
     '#required': true
   flexbox_01:
     '#type': webform_flexbox

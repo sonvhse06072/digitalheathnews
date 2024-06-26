@@ -6,8 +6,8 @@
 
     <div class="d-flex flex-column justify-content-between popup-content-main">
       <div>
-        <h2 class="popup-title">Lorem ipsum dolor sit consectetur?Lorem ipsum dolor sit consectetur?Lorem ipsum dolor sit consectetur?</h2>
-        <p class="popup-description"></p>
+        <h2 class="popup-title">Imagine being able to predict a heart attack, 10 years from now?</h2>
+        <p class="popup-description">Follow our socials to learn how Digital Health will benefit you.</p>
       </div>
 
       <div>
@@ -38,7 +38,14 @@
 
       <div class="follow-us d-block d-md-flex align-items-center gap-2 mt-3 mt-md-0">
         <div class="text-center mb-2 mb-md-0 fw-bolder">{{ 'Follow Us'|t }}</div>
-        {{ page.socials }}
+        <div class="d-flex">
+          {{ page.socials }}
+          <a class="ps-2" href="/rss.xml" target="_blank">
+            <img alt="" width="28" src="/{{ directory }}/image/icons/ic-rss.svg" />
+          </a>
+        </div>
+
+
       </div>
 
     </div>

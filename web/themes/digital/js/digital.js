@@ -79,6 +79,7 @@
         setTimeout(function () {
           let popupTitle = drupalSettings.popup_module.popupTitle;
           let popupContent = drupalSettings.popup_module.popupContent;
+          console.log(popupTitle)
           $('.popup-overlay').addClass('active');
           $('.popup-title').text(popupTitle);
           $('.popup-description').text(popupContent);
