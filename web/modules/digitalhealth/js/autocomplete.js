@@ -1,7 +1,7 @@
 (function ($, Drupal, drupalSettings) {
   Drupal.behaviors.autocompleteBehavior = {
     attach: function (context, settings) {
-      $('#autocomplete-input', context).on('autocompleteBehavior').each(function () {
+      $('.search-input', context).on('autocompleteBehavior').each(function () {
         $(this).autocomplete({
           source: function (request, response) {
             $.ajax({

@@ -4,7 +4,7 @@
   "content": node.body.value,
   "img_src": node.field_image.entity.uri.url,
   "date": node.changed.value|date("d M Y"),
-  "tags": node.field_tags.value ? node.field_tags.value|split(',')|map(item => item|trim) : [],
+  "tags": node.field_tags.value,
   "category": node.field_category.entity.name.value,
   "author": node.uid.entity.name.value,
   "link_user": "/user-info/" ~ node.uid.0.target_id
@@ -56,12 +56,23 @@
 
   {{ item.content|raw }}
 
-
   <div class="tags">
     {% for tag in item.tags %}
-      <a href="/?tag={{ tag }}" class="tag px-1">{{ tag }}</a>
+
     {% endfor %}
   </div>
+
+
+
+  {% if node.field_tags %}
+    {% for item in node.field_tags %}
+      {% set term = item.entity %}
+      <a class="px-1" href="/?tag={{ term.name.value }}">
+        {{ term.name.value }}
+      </a>
+    {% endfor %}
+  {% endif %}
+
 
   <div class="d-flex justify-content-between align-items-center mt-5">
 

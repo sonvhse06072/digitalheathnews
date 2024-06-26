@@ -45,7 +45,7 @@ class ArticleController
                             ' . $date . '
                           </div>
                           <h5 class="card-title mt-3 fw-bold">
-                            <a href="'.$link_url.'">'. $title .'</a>
+                            <a class="text-decoration-none text-dark" href="'.$link_url.'">'. $title .'</a>
                           </h5>
                           <p class="card-text">' . ($description) . '</p>
                           <a href="' . $link_url . '" class="text-decoration-none text-dark"><strong>' . t("Read more") . '</strong></a>

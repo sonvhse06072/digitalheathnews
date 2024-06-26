@@ -9,3 +9,7 @@
 .ui-state-focus {
   background-color: #005BA6 !important;
 }
+
+.ui-menu.ui-widget.ui-widget-content.ui-autocomplete {
+  z-index: 9999;
+}

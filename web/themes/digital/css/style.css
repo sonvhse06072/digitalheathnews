@@ -11565,6 +11565,16 @@ footer .footer-bottom .left strong:nth-last-child(1) {
   text-decoration: none;
   color: #1E4D76;
 }
+.page--node .content p img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .page--node .content p img {
+    width: auto;
+    height: auto;
+  }
+}
 .page--node .date {
   color: #393939;
 }
