@@ -1,0 +1,20 @@
+uuid: f18238c1-d6a9-4214-b0da-d73bf35511d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - digitalhealth
+  theme:
+    - digital
+id: digital_autocompleteblock
+theme: digital
+region: search_autocomplete
+weight: 0
+provider: null
+plugin: autocomplete_block
+settings:
+  id: autocomplete_block
+  label: 'Autocomplete Block'
+  label_display: '0'
+  provider: digitalhealth
+visibility: {  }
