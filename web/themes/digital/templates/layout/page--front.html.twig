@@ -24,10 +24,14 @@
               <div class="col-auto">
                 <div class="filter">
                   <a href="/" class="all">{{ 'All'|t }}</a>
-                  <a href="?category=Technology" class="technology {{ url_parameters['category'] == 'Technology' ? 'active' : '' }}">{{ 'Technology'|t }}</a>
-                  <a href="?category=Business" class="business {{ url_parameters['category'] == 'Business' ? 'active' : '' }}">{{ 'Business'|t }}</a>
-                  <a href="?category=Lifestyle" class="lifestyle {{ url_parameters['category'] == 'Lifestyle' ? 'active' : '' }}">{{ 'Lifestyle'|t }}</a>
-                  <a href="?category=Features" class="features {{ url_parameters['category'] == 'Features' ? 'active' : '' }}">{{ 'Features'|t }}</a>
+                  <a href="/technology"
+                     class="technology {{ page['#title'] == 'Technology' ? 'active' : '' }}">{{ 'Technology'|t }}</a>
+                  <a href="/business"
+                     class="business {{ page['#title'] == 'Business' ? 'active' : '' }}">{{ 'Business'|t }}</a>
+                  <a href="/lifestyle"
+                     class="lifestyle {{ page['#title'] == 'Lifestyle' ? 'active' : '' }}">{{ 'Lifestyle'|t }}</a>
+                  <a href="/features"
+                     class="features {{ page['#title'] == 'Features' ? 'active' : '' }}">{{ 'Features'|t }}</a>
                 </div>
               </div>
               <div class="col-auto d-none d-md-block">

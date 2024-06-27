@@ -10,7 +10,6 @@
       {% if page['#title'] == 'Technology' %}
         <div class="banner text-center pt-5">
           <h2>{{ 'The latest and greatest news on digital health technology. Robotic surgery, AI in healthcare and much more.'|t }}</h2>
-          {#          <p>{{ 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim lorem ipsum veniam'|t }}</p> #}
         </div>
 
       {% elseif page['#title'] == 'Business' %}
@@ -22,13 +21,13 @@
 
 
       {% elseif page['#title'] == 'Lifestyle' %}
-        <div>
+        <div class="banner text-center pt-5">
           <h2>{{ 'From diets to disease management. Explore the latest trends on healthy living, with insights into the latest emerging research and health related news.'|t }}</h2>
         </div>
 
       {% elseif page['#title'] == 'Features' %}
 
-        <div>
+        <div class="banner text-center pt-5">
           <h2>{{ 'Get your daily dose of breaking, trending and general Digital Health stories.'|t }}</h2>
         </div>
       {% endif %}
@@ -46,11 +45,11 @@
                   <a href="/" class="all">{{ 'All'|t }}</a>
                   <a href="/technology"
                      class="technology {{ page['#title'] == 'Technology' ? 'active' : '' }}">{{ 'Technology'|t }}</a>
-                  <a href="/Business"
+                  <a href="/business"
                      class="business {{ page['#title'] == 'Business' ? 'active' : '' }}">{{ 'Business'|t }}</a>
-                  <a href="/Lifestyle"
+                  <a href="/bifestyle"
                      class="lifestyle {{ page['#title'] == 'Lifestyle' ? 'active' : '' }}">{{ 'Lifestyle'|t }}</a>
-                  <a href="/Features"
+                  <a href="/features"
                      class="features {{ page['#title'] == 'Features' ? 'active' : '' }}">{{ 'Features'|t }}</a>
                 </div>
               </div>
