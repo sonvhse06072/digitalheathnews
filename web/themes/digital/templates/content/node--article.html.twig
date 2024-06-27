@@ -56,13 +56,6 @@
 
   {{ item.content|raw }}
 
-  <div class="tags">
-    {% for tag in item.tags %}
-
-    {% endfor %}
-  </div>
-
-
 
   {% if node.field_tags %}
     {% for item in node.field_tags %}

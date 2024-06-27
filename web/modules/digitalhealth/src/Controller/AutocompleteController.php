@@ -19,7 +19,7 @@ class AutocompleteController extends ControllerBase
         ->condition('title', $input, 'CONTAINS')
         // Add another condition here
         ->condition('body', $input, 'CONTAINS')
-        ->condition('field_tags', $input, 'CONTAINS')
+        ->condition('field_tags.entity.name', $input, 'CONTAINS')
         ->condition('field_category.entity.name', $input, 'CONTAINS');
 
       $query = \Drupal::entityQuery('node')
