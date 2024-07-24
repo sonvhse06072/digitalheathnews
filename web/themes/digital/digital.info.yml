@@ -27,6 +27,7 @@ regions:
   search_autocomplete: Search autocomplete
   search_autocomplete_mobile_1: Search autocomplete mobile 1
   search_autocomplete_mobile_2: Search autocomplete mobile 2
+  menu_footer_bottom: Menu footer bottom
 
 components:
   namespaces:

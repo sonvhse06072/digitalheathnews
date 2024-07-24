@@ -40,3 +40,12 @@ it_app.suggestions:
     _title: 'Autocomplete Suggestions'
   requirements:
     _permission: 'access content'
+
+
+it_app.page_front.settings:
+  path: '/admin/config/page-front-settings'
+  defaults:
+    _form: '\Drupal\digitalhealth\Form\PageFrontSettings'
+    _title: 'Page Front Settings'
+  requirements:
+    _permission: 'administer site configuration'

@@ -7,31 +7,9 @@
 
     <div class="container">
 
-      {% if page['#title'] == 'Technology' %}
-        <div class="banner text-center pt-5">
-          <h2>{{ 'The latest and greatest news on digital health technology. Robotic surgery, AI in healthcare and much more.'|t }}</h2>
-        </div>
-
-      {% elseif page['#title'] == 'Business' %}
-        <div class="banner text-center pt-5">
-          <h2>{{ 'Get up to speed on the latest from Digital Health startups to big data.
-          Or discover what’s happening in Digital Health business news with comments and analysis.
-          '|t }}</h2>
-        </div>
-
-
-      {% elseif page['#title'] == 'Lifestyle' %}
-        <div class="banner text-center pt-5">
-          <h2>{{ 'From diets to disease management. Explore the latest trends on healthy living, with insights into the latest emerging research and health related news.'|t }}</h2>
-        </div>
-
-      {% elseif page['#title'] == 'Features' %}
-
-        <div class="banner text-center pt-5">
-          <h2>{{ 'Get your daily dose of breaking, trending and general Digital Health stories.'|t }}</h2>
-        </div>
-      {% endif %}
-
+      <div class="view-content-page-category">
+        {{ page.content }}
+      </div>
 
       <div class="box-search pt-4">
 
@@ -47,7 +25,7 @@
                      class="technology {{ page['#title'] == 'Technology' ? 'active' : '' }}">{{ 'Technology'|t }}</a>
                   <a href="/business"
                      class="business {{ page['#title'] == 'Business' ? 'active' : '' }}">{{ 'Business'|t }}</a>
-                  <a href="/bifestyle"
+                  <a href="/lifestyle"
                      class="lifestyle {{ page['#title'] == 'Lifestyle' ? 'active' : '' }}">{{ 'Lifestyle'|t }}</a>
                   <a href="/features"
                      class="features {{ page['#title'] == 'Features' ? 'active' : '' }}">{{ 'Features'|t }}</a>

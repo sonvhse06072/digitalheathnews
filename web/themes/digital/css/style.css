@@ -11557,6 +11557,12 @@ footer .footer-bottom .left strong:nth-last-child(1) {
 .page--front .latest .title {
   color: #005BA6;
 }
+.page--front .view-content-page-category .item-list {
+  display: none;
+}
+.page--front .view-content-page-category .feed-icon {
+  display: none;
+}
 
 .page--node .go-back {
   background-color: #E6E6E6;
@@ -11804,6 +11810,17 @@ footer .footer-bottom .left strong:nth-last-child(1) {
 .web-form-contact {
   max-width: 946px;
   margin: auto;
+}
+.web-form-contact #edit-title {
+  color: #005BA6;
+  text-align: center;
+}
+.web-form-contact #edit-description {
+  color: #393939;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .web-form-contact #edit-flexbox-01 {
   display: flex;

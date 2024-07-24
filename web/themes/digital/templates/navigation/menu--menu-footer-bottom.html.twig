@@ -1,0 +1,7 @@
+{% for i in items %}
+  {% if i.url == '#' %}
+      <strong>{{ i.title }}</strong>
+    {% else %}
+      <strong><a class="text-decoration-none text-white" href="{{ i.url }}">{{ i.title }}</a></strong>
+  {% endif %}
+{% endfor %}

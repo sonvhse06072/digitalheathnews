@@ -48,3 +48,13 @@ function digital_theme_suggestions_page_alter(array &$suggestions, array $variab
       break;
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for HTML document templates.
+ */
+function digital_preprocess_html(&$variables) {
+  $config =  \Drupal::config('digitalhealth.page_front.settings');
+  $variables['page']['page_front']['title']= $config->get('title');
+  $variables['page']['page_front']['description']= $config->get('description');
+}
+
